@@ -1,10 +1,4 @@
 class Solution {
-    public boolean isVowel(char ch){
-        String vowel = "aeiou";
-        if(vowel.contains(ch+""))
-            return true;
-        return false;
-    }
     public int beautifulSubstrings(String s, int k) {
         int cnt1 = 0;
         int cnt2 = 0;
@@ -14,7 +8,8 @@ class Solution {
              cnt1 = 0;
              cnt2 = 0;
             for(int j = i;j<len;j++){
-                if(isVowel(s.charAt(j)))
+                char ch = s.charAt(j);
+                if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
                     cnt1++;
                 else
                     cnt2++;
