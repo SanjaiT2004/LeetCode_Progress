@@ -18,7 +18,7 @@ class Solution {
                     cnt1++;
                 else
                     cnt2++;
-                if(cnt1!=0 && cnt2 != 0 && cnt1 == cnt2 && (cnt1 * cnt2) % k == 0)
+                if(cnt1 == cnt2 && (cnt1 * cnt2) % k == 0)
                     cnt++;
             }
         }
