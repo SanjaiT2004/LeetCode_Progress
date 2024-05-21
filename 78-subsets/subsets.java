@@ -10,7 +10,7 @@ class Solution {
     }
     public List<List<Integer>> subsets(int[] nums) {
         list = new ArrayList<>();
-        Arrays.sort(nums);
+        // Arrays.sort(nums);
         backtrack(nums,new ArrayList<>(),0);
         return list;
     }
