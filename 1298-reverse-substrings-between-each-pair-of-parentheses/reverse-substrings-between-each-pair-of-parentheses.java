@@ -1,6 +1,5 @@
 class Solution {
     public String reverseParentheses(String s) {
-        StringBuilder sb = new StringBuilder("");
         Stack<StringBuilder> stack = new Stack<>();
         stack.push(new StringBuilder(""));
         for(char ch : s.toCharArray()){
